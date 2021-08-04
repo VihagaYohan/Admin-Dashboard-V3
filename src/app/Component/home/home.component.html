@@ -1,8 +1,34 @@
 <div class="container-fluid page">
-    <div class="page__box p-3 mt-2">Home</div>
-    <div class="page__content shadow p-3 position-relative">
-        <div class="page__content-data position-absolute text-center">
-            Home content goes here
+  <div class="page__box p-3 mt-2">Home</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="page__content-data position-absolute text-center">
+      <div style="display: flex; flex-direction: row" class="mr-2">
+        <!-- total posts count -->
+        <div class="card" style="width: 18rem; margin-right: 5px">
+          <div class="card-body">
+            <h4 class="card-title">Total Posts</h4>
+            <p>
+              {{ postsData?.length }}
+            </p>
+          </div>
         </div>
+
+        <!-- total users count -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h4 class="card-title">Total Users</h4>
+            <p>{{ usersData?.length }}</p>
+          </div>
+        </div>
+
+        <!-- total stores count -->
+        <div class="card" style="width: 18rem; margin-left: 5px">
+          <div class="card-body">
+            <h4 class="card-title">Total Stores</h4>
+            <p>{{ storesData?.length }}</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
