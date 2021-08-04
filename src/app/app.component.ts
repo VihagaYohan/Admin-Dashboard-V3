@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Admin-Dashboard-V3';
+  sideBarOpen = true;
+
+  sideBarToggler(){
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 }
